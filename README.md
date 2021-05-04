@@ -23,4 +23,4 @@ print('Before using numba:')
 
 ## Results
 ![results](assets/numba-before-after.jpg)  
-157/7.27 = 21.6 times faster
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{157}{7.27}" title="\Large x=\frac{157}{7.27}"/> 21.6 times faster
