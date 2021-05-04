@@ -23,4 +23,4 @@ print('Before using numba:')
 
 ## Results
 ![results](assets/numba-before-after.jpg)  
-Meaning it's about 21 times faster 🙇
+Showing that it's about 21 times faster in my case 🙇
