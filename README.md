@@ -22,4 +22,5 @@ print('Before using numba:')
 ```
 
 ## Results
-![results](assets/numba-before-after.jpg)
+![results](assets/numba-before-after.jpg)  
+157/7.27 = 21.6 times faster
