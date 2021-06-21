@@ -6,7 +6,7 @@ In my repository, in addition to the numba-flavord versions, I released the numb
 
 ## Reproducing the results
 This is just a showcase, but if you want to check its authenticity, firstly you need to download and extract both versions of numba-less and numba-flavord and follow instructions.  
-Firstly, run this command in a terminal `pip install -e im2dhist-0.1.0.9/. &> /dev/null; pip install -e im2dhisteq-0.0.2/. &> /dev/null` to install the numba-less version. After running the bellow code, enter this command in a terminal to install the numba-flavored version: `pip install -e im2dhist &> /dev/null; pip install -e im2dhisteq &> /dev/null` and run the bellow code again.  
+Firstly, run this command in a terminal `pip install -e im2dhist-0.1.0.9/. &> /dev/null; pip install -e im2dhisteq-0.0.2/. &> /dev/null` to install the numba-less version. After running the bellow code in a jupyter-notebook , enter this command in a terminal to install the numba-flavored version: `pip install -e im2dhist &> /dev/null; pip install -e im2dhisteq &> /dev/null` and run the bellow code again.  
 
 ```python
 import numpy as np
@@ -17,7 +17,6 @@ img = cv2.imread('cloudy-day.jpg')
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 v = hsv[:, :, 2].copy()
 
-print('Before using numba:')
 %timeit vv = im2dhisteq.im2dhisteq(v)
 ```
 
